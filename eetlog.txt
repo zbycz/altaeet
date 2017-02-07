@@ -1,0 +1,67 @@
+
+-------------------------------
+Datum: Mon Feb 06 17:09:27 CET 2017
+Částka: 10
+Závažná chyba - data nebyla odeslána
+cz.tomasdvorak.eet.client.exceptions.InvalidKeystoreException:Input stream of ClientKey cannot be NULL
+KONEC
+
+
+
+-------------------------------
+Číslo: 2 (provozovna 11)
+Datum: Mon Feb 06 17:32:46 CET 2017
+Částka: 10
+FIK:null
+BKP:0C2B429F-7D60B91D-5210697D-344FCE71-8EB19447
+KONEC
+
+
+
+-------------------------------
+Číslo: 3 (provozovna 11)
+Datum: Mon Feb 06 17:33:31 CET 2017
+Částka: 15
+FIK:null
+BKP:5460598F-2191006D-9319B223-90AD53D9-F01F3A78
+KONEC
+
+
+
+-------------------------------
+Číslo: 4 (provozovna 11)
+Datum: Mon Feb 06 17:34:48 CET 2017
+Částka: 5
+BKP:254D9067-404068D7-0933F77D-A6E06F8A-3EF1F98A
+KONEC
+Program spuštěn. Poslední pořadové číslo: 4
+Program spuštěn. Pořadové číslo poslední účtenky: 4
+Program spuštěn. Pořadové číslo poslední účtenky: 4
+
+-------------------------------
+Číslo: 5 (provozovna 11)
+Datum: Mon Feb 06 18:13:05 CET 2017
+Částka: 1
+BKP:AC3847C1-47AFE019-2A6A9AC6-44DC7310-1AF53EF5
+KONEC
+
+-------------------------------
+Číslo: 6 (provozovna 11)
+Datum: Mon Feb 06 18:18:15 CET 2017
+Částka: -1
+BKP:B2EAF220-46FA112E-3E0920AD-CAB5AED9-20F7D539
+KONEC
+Program spuštěn. Pořadové číslo poslední účtenky: 6
+Program spuštěn. Pořadové číslo poslední účtenky: 6
+Program spuštěn. Pořadové číslo poslední účtenky: 6
+
+-------------------------------
+Číslo: 7 (provozovna 11)
+Datum: Mon Feb 06 18:32:00 CET 2017
+Částka: -5
+BKP:A43F3D42-F507E8DE-1C8CA21D-4C0E75E9-573A88CA
+KONEC
+Program spuštěn. Pořadové číslo poslední účtenky: 7
+Program spuštěn. Pořadové číslo poslední účtenky: 7
+Program spuštěn. Pořadové číslo poslední účtenky: 7
+Program spuštěn. Pořadové číslo poslední účtenky: 7
