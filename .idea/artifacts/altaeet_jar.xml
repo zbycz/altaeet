@@ -3,7 +3,6 @@
     <output-path>$PROJECT_DIR$/out/artifacts/altaeet_jar</output-path>
     <root id="archive" name="altaeet.jar">
       <element id="module-output" name="altaeet" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/libs/asm-3.3.1.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/libs/junit-4.12.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/libs/antlr-2.7.7.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/libs/jasypt-1.9.2.jar" path-in-jar="/" />
@@ -89,7 +88,6 @@
       <element id="extracted-dir" path="$PROJECT_DIR$/libs/cxf-tools-wsdlto-frontend-jaxws-3.0.10.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/libs/cxf-tools-wsdlto-databinding-jaxb-3.0.10.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/libs/cxf-tools-wsdlto-frontend-javascript-3.0.10.jar" path-in-jar="/" />
-      <element id="file-copy" path="$PROJECT_DIR$/libs/asm-3.3.1.jar" />
       <element id="file-copy" path="$PROJECT_DIR$/libs/junit-4.12.jar" />
       <element id="file-copy" path="$PROJECT_DIR$/libs/antlr-2.7.7.jar" />
       <element id="file-copy" path="$PROJECT_DIR$/libs/jasypt-1.9.2.jar" />
@@ -175,6 +173,8 @@
       <element id="file-copy" path="$PROJECT_DIR$/libs/cxf-tools-wsdlto-frontend-jaxws-3.0.10.jar" />
       <element id="file-copy" path="$PROJECT_DIR$/libs/cxf-tools-wsdlto-databinding-jaxb-3.0.10.jar" />
       <element id="file-copy" path="$PROJECT_DIR$/libs/cxf-tools-wsdlto-frontend-javascript-3.0.10.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/libs/asm-3.3.1.jar" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/asm-3.3.1.jar" path-in-jar="/" />
     </root>
   </artifact>
 </component>

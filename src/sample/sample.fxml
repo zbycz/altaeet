@@ -21,11 +21,11 @@
             <Button layoutX="62.0" layoutY="150.0" mnemonicParsing="false" onAction="#handleButtonClick" text="Odeslat" />
             <Label layoutX="13.0" layoutY="96.0" prefHeight="17.0" prefWidth="210.0" text="Vystavit účtenku na částku:" />
             <Label layoutX="176.0" layoutY="126.0" text="Kč" />
-            <Label fx:id="provozovnaLabel" layoutX="62.0" layoutY="71.0" text="ID provozovny" />
+            <Label fx:id="provozovnaLabel" layoutX="62.0" layoutY="71.0" text="Loading..." />
             <Button layoutX="14.0" layoutY="195.0" mnemonicParsing="false" onAction="#copyCliboard" text="Zkopírovat do schránky" />
             <Button layoutX="13.0" layoutY="234.0" mnemonicParsing="false" onAction="#showHistory" text="Ukázat historii" />
          </children>
     </AnchorPane>
-      <TextArea fx:id="historyTextArea" prefHeight="200.0" prefWidth="200.0" text="Zde je záznam od spuštění programu.&#10;Celá historie v souboru eetlog.txt&#10;" />
+      <TextArea fx:id="historyTextArea" prefHeight="200.0" prefWidth="200.0" text="&#10;" />
   </items>
 </SplitPane>

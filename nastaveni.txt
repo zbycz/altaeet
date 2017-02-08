@@ -1,0 +1,8 @@
+idProvozovny 11 Vlastina
+idPokladny dev1
+
+
+
+V tomto souboru musí být na prvním řádku "idProvozovny číslo jednoslovnýnázev"
+a na druhém řádku "idPokladny identifikátor"
+ostatní řádky jsou ignorovány.

@@ -32,6 +32,7 @@ KONEC
 ÄŒÃ­slo: 4 (provozovna 11)
 Datum: Mon Feb 06 17:34:48 CET 2017
 ÄŒÃ¡stka: 5
+FIK:c32eb2c9-5102-4589-9f23-28a3396f2d33-03
 BKP:254D9067-404068D7-0933F77D-A6E06F8A-3EF1F98A
 KONEC
 Program spuÅ¡tÄ›n. PoslednÃ­ poÅ™adovÃ© ÄÃ­slo: 4
@@ -42,6 +43,7 @@ Program spuÅ¡tÄ›n. PoÅ™adovÃ© ÄÃ­slo poslednÃ­ ÃºÄtenky: 4
 ÄŒÃ­slo: 5 (provozovna 11)
 Datum: Mon Feb 06 18:13:05 CET 2017
 ÄŒÃ¡stka: 1
+FIK:3d21ccaa-eaa3-40ad-bb91-64a8f857f0b4-03
 BKP:AC3847C1-47AFE019-2A6A9AC6-44DC7310-1AF53EF5
 KONEC
 
@@ -49,6 +51,7 @@ KONEC
 ÄŒÃ­slo: 6 (provozovna 11)
 Datum: Mon Feb 06 18:18:15 CET 2017
 ÄŒÃ¡stka: -1
+FIK:afb07803-1e45-44ca-b6b9-be37b1468a56-06
 BKP:B2EAF220-46FA112E-3E0920AD-CAB5AED9-20F7D539
 KONEC
 Program spuÅ¡tÄ›n. PoÅ™adovÃ© ÄÃ­slo poslednÃ­ ÃºÄtenky: 6
@@ -59,9 +62,119 @@ Program spuÅ¡tÄ›n. PoÅ™adovÃ© ÄÃ­slo poslednÃ­ ÃºÄtenky: 6
 ÄŒÃ­slo: 7 (provozovna 11)
 Datum: Mon Feb 06 18:32:00 CET 2017
 ÄŒÃ¡stka: -5
+FIK:7770cc5f-81ac-4c73-b3f0-08f1b3c3438b-02
 BKP:A43F3D42-F507E8DE-1C8CA21D-4C0E75E9-573A88CA
 KONEC
 Program spuÅ¡tÄ›n. PoÅ™adovÃ© ÄÃ­slo poslednÃ­ ÃºÄtenky: 7
 Program spuÅ¡tÄ›n. PoÅ™adovÃ© ÄÃ­slo poslednÃ­ ÃºÄtenky: 7
 Program spuÅ¡tÄ›n. PoÅ™adovÃ© ÄÃ­slo poslednÃ­ ÃºÄtenky: 7
 Program spuÅ¡tÄ›n. PoÅ™adovÃ© ÄÃ­slo poslednÃ­ ÃºÄtenky: 7
+Program spuÅ¡tÄ›n. PoÅ™adovÃ© ÄÃ­slo poslednÃ­ ÃºÄtenky: 7
+Program spuÅ¡tÄ›n. PoÅ™adovÃ© ÄÃ­slo poslednÃ­ ÃºÄtenky: 7
+nastaveni.txt - chyba v idPokladny
+Upravte nastaveni.txt a restartujte program.
+ÄŒÃ¡stka nenÃ­ ÄÃ­selnÃ¡. KONEC
+KONEC
+nastaveni.txt - chyba v idPokladny
+Upravte nastaveni.txt a restartujte program. KONEC
+Upravte nastaveni.txt a restartujte program. KONEC
+Program spuÅ¡tÄ›n pro 11 Vlastina, pokladna POKL1. PoÅ™adovÃ© ÄÃ­slo poslednÃ­ ÃºÄtenky: 7
+Program spuÅ¡tÄ›n pro 11 Vlastina, pokladna dev1. 
+PoÅ™adovÃ© ÄÃ­slo poslednÃ­ ÃºÄtenky: 1
+
+-------------------------------
+ÄŒÃ­slo: 2 (provozovna 11, pokladna dev1)
+Datum: 2017-02-08 07:25:32
+ÄŒÃ¡stka: 1.60
+ZÃ¡vaÅ¾nÃ¡ chyba - data nebyla odeslÃ¡na
+cz.tomasdvorak.eet.client.exceptions.InvalidKeystoreException:java.io.IOException: error constructing MAC: java.lang.SecurityException: JCE cannot authenticate the provider BC
+KONEC
+Program spuÅ¡tÄ›n pro 11 Vlastina, pokladna dev1. 
+PoÅ™adovÃ© ÄÃ­slo poslednÃ­ ÃºÄtenky: 2
+
+-------------------------------
+ÄŒÃ­slo: 3 (provozovna 11, pokladna dev1)
+Datum: 2017-02-08 07:28:21
+ÄŒÃ¡stka: 1.70
+FIK:3106138b-cf81-4d87-b0cf-0099ce36c1db-04
+BKP:105837AB-A7437C4F-44A47658-3680AAA2-0D7CE72E
+TrÅ¾ba je evidovÃ¡na v bÄ›Å¾nÃ©m reÅ¾imu.
+KONEC
+Program spuštìn pro 11 Vlastina, pokladna dev1. 
+Poøadové èíslo poslední úètenky: 3
+
+-------------------------------
+Èíslo: 4 (provozovna 11, pokladna dev1)
+Datum: 2017-02-08 07:35:12
+Èástka: -1.70
+Program spuštìn pro 11 Vlastina, pokladna dev1. 
+Poøadové èíslo poslední úètenky: 4
+Program spuštìn pro 11 Vlastina, pokladna dev1. 
+Poøadové èíslo poslední úètenky: 3
+
+-------------------------------
+Èíslo: 4 (provozovna 11, pokladna dev1)
+Datum: 2017-02-08 07:36:17
+Èástka: -1.70
+Program spuštìn pro 11 Vlastina, pokladna dev1. 
+Poøadové èíslo poslední úètenky: 4
+Program spuštìn pro 11 Vlastina, pokladna dev1. 
+Poøadové èíslo poslední úètenky: 3
+
+-------------------------------
+Èíslo: 4 (provozovna 11, pokladna dev1)
+Datum: 2017-02-08 07:37:14
+Èástka: -1.70
+null
+Program spuštìn pro 11 Vlastina, pokladna dev1. 
+Poøadové èíslo poslední úètenky: 4
+Program spuštìn pro 11 Vlastina, pokladna dev1. 
+Poøadové èíslo poslední úètenky: 3
+Program spuštìn pro 11 Vlastina, pokladna dev1. 
+Poøadové èíslo poslední úètenky: 3
+
+-------------------------------
+Èíslo: 4 (provozovna 11, pokladna dev1)
+Datum: 2017-02-08 07:43:00
+Èástka: -1.70
+Program spuštìn pro 11 Vlastina, pokladna dev1. 
+Poøadové èíslo poslední úètenky: 4
+Program spuštìn pro 11 Vlastina, pokladna dev1. 
+Poøadové èíslo poslední úètenky: 3
+
+-------------------------------
+Èíslo: 4 (provozovna 11, pokladna dev1)
+Datum: 2017-02-08 07:46:50
+Èástka: -1.70
+Program spuštìn pro 11 Vlastina, pokladna dev1. 
+Poøadové èíslo poslední úètenky: 4
+Program spuštìn pro 11 Vlastina, pokladna dev1. 
+Poøadové èíslo poslední úètenky: 3
+
+-------------------------------
+Èíslo: 4 (provozovna 11, pokladna dev1)
+Datum: 2017-02-08 07:49:51
+Èástka: -1.70
+Program spuštìn pro 11 Vlastina, pokladna dev1. 
+Poøadové èíslo poslední úètenky: 4
+Program spuštìn pro 11 Vlastina, pokladna dev1. 
+Poøadové èíslo poslední úètenky: 3
+
+-------------------------------
+Èíslo: 4 (provozovna 11, pokladna dev1)
+Datum: 2017-02-08 07:51:35
+Èástka: -1.70
+Program spuštìn pro 11 Vlastina, pokladna dev1. 
+Poøadové èíslo poslední úètenky: 4
+
+-------------------------------
+Èíslo: 4 (provozovna 11, pokladna dev1)
+Datum: 2017-02-08 07:57:00
+Èástka: -1.70
+Program spuštìn pro 11 Vlastina, pokladna dev1. 
+Poøadové èíslo poslední úètenky: 3
+
+-------------------------------
+Èíslo: 4 (provozovna 11, pokladna dev1)
+Datum: 2017-02-08 08:13:55
+Èástka: -1.70

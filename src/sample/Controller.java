@@ -30,6 +30,8 @@ import java.math.BigDecimal;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
+import java.text.SimpleDateFormat;
+import java.time.format.DateTimeFormatter;
 import java.util.Date;
 import java.util.Scanner;
 
@@ -45,12 +47,30 @@ public class Controller {
     private Label provozovnaLabel;
 
     private String posledniUctenka = "Zatím neproběhla platba.";
+    private String idPokl = null;
+    private int idProvoz;
+    private String idProvozTxt;
 
     @FXML
     public void initialize() {
-        getIdProvoz();
-        String poradCis = getPoradCis(false);
-        log("Program spuštěn. Pořadové číslo poslední účtenky: "+poradCis);
+        Scanner in = null;
+        try {
+            in = new Scanner(new FileReader("nastaveni.txt"));
+
+            if (!in.next().equals("idProvozovny")) throw new RuntimeException("nastaveni.txt - chyba");
+            idProvoz = in.nextInt();
+            idProvozTxt = in.next();
+            if (!in.next().equals("idPokladny")) throw new RuntimeException("nastaveni.txt - chyba");
+            idPokl = in.next();
+
+        } catch (Exception e) {
+            log(e.getMessage() + " chyba: " + e.getClass().getSimpleName());
+            e.printStackTrace();
+            return;
+        }
+
+        provozovnaLabel.setText("(" + idProvoz + " " + idProvozTxt + ", pokladna " + idPokl + ")");
+        log("Program spuštěn pro " + idProvoz + " " + idProvozTxt + ", pokladna " + idPokl + ". \r\nPořadové číslo poslední účtenky: " + getPoradCis(false));
     }
 
     @FXML
@@ -72,15 +92,19 @@ public class Controller {
 
     @FXML
     private void handleButtonClick(ActionEvent event) {
+        if (idPokl == null) {
+            log("Upravte nastaveni.txt a restartujte program. KONEC");
+            return;
+        }
         try {
             BigDecimal amount = getAmount();
             Date date = new Date();
             String poradCis = getPoradCis(true);
-            int idProvoz = getIdProvoz();
+
 
             log("\r\n-------------------------------");
             posledniUctenka = "";
-            logUctenka("Číslo: " + poradCis +" (provozovna "+idProvoz+")\r\nDatum: " + date + "\r\nČástka: " + amount);
+            logUctenka("Číslo: " + poradCis + " (provozovna " + idProvoz + ", pokladna " + idPokl + ")\r\nDatum: " + new SimpleDateFormat("yyyy-MM-dd hh:mm:ss").format(date) + "\r\nČástka: " + amount);
 
             InputStream clientKey = getClass().getResourceAsStream("/keys/CZ48034398.p12");
             InputStream rootCACertificate = getClass().getResourceAsStream("/keys/rca15_rsa.der");
@@ -90,7 +114,7 @@ public class Controller {
             TrzbaDataType data = new TrzbaDataType()
                     .withDicPopl("CZ48034398") //alta
                     .withIdProvoz(idProvoz)
-                    .withIdPokl("POKL1")
+                    .withIdPokl(idPokl)
                     .withPoradCis(poradCis)
                     .withDatTrzby(date)
                     .withCelkTrzba(amount);
@@ -120,27 +144,14 @@ public class Controller {
             log(e.getClass().getName() + ":" + e.getMessage());
             e.printStackTrace();
 
-        } catch (RuntimeException e) {
-            log(e.getMessage());
+        } catch (Throwable e) {
+            log(e.getMessage() + " chyba: " + e.getClass().getSimpleName());
         }
 
         log("KONEC");
     }
 
-    private int getIdProvoz() {
-        Scanner in = null;
-        try {
-            in = new Scanner(new FileReader("provozovna.txt"));
-        } catch (FileNotFoundException e) {
-            provozovnaLabel.setText("provozovna.txt nenalezeno !!!");
-            throw new RuntimeException("provozovna.txt nenalezeno !!!");
-        }
-
-        int id = in.nextInt();
-        String s = in.next();
-        provozovnaLabel.setText("("+id + " " + s + ")");
-        return id;
-    }
+    // ------------------------------------- helpers -------------------------------------
 
     private String getPoradCis(boolean increment) {
         Scanner in = null;
